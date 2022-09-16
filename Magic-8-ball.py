@@ -1,8 +1,6 @@
 import random
 import time 
-randomnumber = random.randint(1, 5)
 playAgain = "y"
-
 name = input("what is your name? ")
 while name.isdigit():
     name = input("what is your name? ")
@@ -11,7 +9,7 @@ while name.isdigit():
 while playAgain == "y" or playAgain == "yes":
     input("what is your question? ")
 
-    randomnumber = random.randint(1, 5)
+    randomnumber = random.randint(1, 11)
 
     
     if randomnumber == 1:
@@ -37,7 +35,7 @@ while playAgain == "y" or playAgain == "yes":
     elif randomnumber == 11:
         print(name,"... you got the ultra rare fortune, consider yourself lucky!")
     time.sleep(2)
-    playAgain = input("play again? y/n")
+    playAgain = input("play again? y/n ")
 
 print("thank you so much for to playing my game")
 time.sleep(1)
